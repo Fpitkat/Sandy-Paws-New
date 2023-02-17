@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- meta data -->
+  <meta charset="utf-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+  <title>Sandy Paws - Register your pets</title>
+  <meta name="description"
+        content="Sandy Paws Animal Hospital is a veterinarian practice that will exceed your expectations by providing a unique, warm, and fear-free experience." />
+  <meta property="og:title"
+        content="Sandy Paws - Animal Hospital" />
+  <meta property="og:description"
+        content="We Invite You And Your Best Friend To Join Us At Sandy Paws Animal Hospital." />
+  <!-- bootstrap 5.0 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous"
+        defer />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"
+          defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"
+          defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"
+          defer></script>
+  <!-- google fonts -->
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com" />
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Permanent+Marker&display=swap"
+        rel="stylesheet" />
+  <!-- poppins font -->
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com" />
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+        rel="stylesheet" />
+  <!-- css stylesheet -->
+  <link rel="stylesheet"
+        href="./main.css"
+        defer />
+  <!-- popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+          integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+          crossorigin="anonymous"
+          defer></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+          integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+          crossorigin="anonymous"
+          defer></script>
+  <!-- font awesome icons -->
+  <script src="https://kit.fontawesome.com/c5a43c2a4d.js"
+          crossorigin="anonymous"
+          defer></script>
+  <script src="https://kit.fontawesome.com/aaf608d16e.js"
+          crossorigin="anonymous"></script>
+</head>
+
+<body class="container">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top p-2 mt-0">
+    <div class="container-fluid">
+      <a class="navbar-brand"
+         href="/"><img src="./Images/logo.png"
+             class="logo" /></a>
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse"
+           id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold pe-3"
+               aria-current="page"
+               href="/">Home</a>
+          </li>
+          <li class="nav-item pe-3">
+            <a class="nav-link"
+               href="./#service-cards">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pe-2"
+               href="./#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle pe-4"
+               href="#"
+               id="navbarDropdownMenuLink"
+               role="button"
+               data-bs-toggle="dropdown"
+               aria-expanded="false"> About us </a>
+            <ul class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item"
+                   href="./#staff">Our Staff</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-link active font-weight-bold text-white px-5"
+               href="#"
+               id="navbarDropdownMenuLink"
+               role="button"
+               data-bs-toggle="dropdown"
+               aria-expanded="false"> Contact us </a>
+            <ul class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item"
+                   href="./#contact">Contact</a></li>
+              <li>
+                <a class="dropdown-item"
+                   href="./#contact">FAQ's</a>
+              </li>
+              <li>
+                <a class="dropdown-item"
+                   href="./register.html">Register your Pet</a>
+              </li>
+              <hr />
+              <li>
+                <a class="dropdown-item phone"
+                   href="tel:19042780600">(904) 278-0600</a>
+              </li>
+              <hr />
+              <li>
+                <div class="d-inline-flex flex-row bd-highlight mb-3 social">
+                  <!-- Facebook -->
+                  <a style="color: #3b5998"
+                     href="https://www.facebook.com/SandyPawsAnimalHospital/"
+                     target="_blank"
+                     role="button"><i class="fab fa-facebook-f fa-lg"></i></a>
+                  <!-- Instagram -->
+                  <a style="color: #ac2bac"
+                     href="https://www.instagram.com/sandypawsah/?hl=en"
+                     target="_blank"
+                     role="button"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- REGISTER PET SECTION -->
+  <form action="https://formsubmit.co/info@sandypawsanimalhospital.com"
+        method="post"
+        name="Pet Registration"
+        class="form-page p-2 p-lg-5 pb-1"
+        enctype="multipart/form-data">
+    <input type="text"
+           name="_honey"
+           style="display:none">
+    <input type="hidden"
+           name="_subject"
+           value="Sandy Paws New Pet Registration" />
+    <input type="hidden"
+           name="_next"
+           value="https://www.sandypawsanimalhospital.com/thanks">
+    <!-- Pet 1 information form -->
+    <div class="p-2 p-md-5 step step1 activePage pt-5">
+      <h2 class="border-bottom">Client Information</h2>
+      <div class="row pt-2">
+        <div class="col">
+          <label for="FirstName"
+                 class="form-label">First Name:</label>
+          <input type="text"
+                 class="form-control"
+                 tabindex="1"
+                 id="FirstName"
+                 placeholder="Jane"
+                 name="FirstName"
+                 required />
+          <label for="emailAddress"
+                 class="form-label">Email address</label>
+          <input type="email"
+                 class="form-control"
+                 id="emailAddress"
+                 tabindex="3"
+                 placeholder="name@example.com"
+                 name="email"
+                 required />
+          <label for="street-address"
+                 class="form-label">Street:</label>
+          <input type="text"
+                 class="form-control"
+                 id="street-address"
+                 tabindex="5"
+                 placeholder="123 Main Street"
+                 name="street-address" />
+          <label for="state"
+                 class="form-label">State:</label>
+          <input type="text"
+                 class="form-control"
+                 id="state"
+                 value="Florida"
+                 tabindex="7"
+                 placeholder="State"
+                 name="state" />
+          <label for="referredBy">Referred by:</label>
+          <select class="form-select"
+                  id="referredBy"
+                  tabindex="9"
+                  name="referredBy"
+                  aria-label="Floating label select example"
+                  required>
+            <option selected>Select One</option>
+            <option value="facebook">Facebook</option>
+            <option value="google">Google</option>
+            <option value="nextdoor">NextDoor</option>
+            <option value="internet">Internet Search</option>
+            <option value="instagram">Instagram</option>
+            <option value="grommer">Mobile Groomer</option>
+            <option value="instagram">Previous Client</option>
+            <option value="friend">Referred by Friend</option>
+            <option value="vet">Vet Hospital</option>
+            <option value="yelp">Yelp</option>
+          </select>
+        </div>
+        <div class="col">
+          <label for="lastName"
+                 class="form-label">Last Name:</label>
+          <input type="text"
+                 class="form-control"
+                 tabindex="2"
+                 id="lastName"
+                 name="lastName"
+                 required />
+          <label for="phoneNumber"
+                 class="form-label">Phone</label>
+          <input type="tel"
+                 class="form-control"
+                 tabindex="4"
+                 id="phoneNumber"
+                 name="phoneNumber"
+                 required />
+          <label for="city"
+                 class="form-label">City:</label>
+          <input type="text"
+                 class="form-control"
+                 tabindex="6"
+                 id="city"
+                 name="city" />
+          <label for="zip"
+                 class="form-label">Zip:</label>
+          <input type="text"
+                 class="form-control"
+                 tabindex="8"
+                 id="zip"
+                 name="zip" />
+        </div>
+      </div>
+      <!-- Pet 1 information form -->
+      <div class="mt-5"
+           id="pet1-info">
+        <h2 class="border-bottom">Pet information</h2>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="pet-name-1">Pets Name:</label>
+            <input type="text"
+                   class="form-control"
+                   id="pet-name-1"
+                   name="pet-name-1" />
+          </div>
+          <div class="col">
+            <label for="breed-1">Breed:</label>
+            <input type="text"
+                   class="form-control"
+                   id="breed-1"
+                   name="breed-1" />
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="species-1">Species:</label>
+            <select class="form-select"
+                    id="species-1"
+                    aria-label="Floating label select example"
+                    name="species-1">
+              <option selected>Select One</option>
+              <option value="Cat">Cat</option>
+              <option value="Dog">Dog</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="gender-1">Gender:</label>
+            <select class="form-select"
+                    id="gender-1"
+                    name="gender-1"
+                    aria-label="Floating label select example">
+              <option selected>Select One</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="spay-1">Neutered/Spayed:</label>
+            <select class="form-select"
+                    id="spay-1"
+                    name="spay-1"
+                    aria-label="Floating label select example">
+              <option selected>Select One</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="weight-1"
+                   class="form-label">Weight:</label>
+            <input type="number"
+                   class="form-control"
+                   id="weight-1"
+                   name="weight-1" />
+          </div>
+          <div class="col">
+            <label for="age-1"
+                   class="form-label">Age:</label>
+            <input type="number"
+                   class="form-control"
+                   id="age-1"
+                   name="age-1"
+                   placeholder="Age" />
+          </div>
+          <div class="col">
+            <label for="birthday-1"
+                   class="form-label">Birthday:</label>
+            <input class="form-control"
+                   type="date"
+                   id="birthday-1"
+                   name="birthday-1" />
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="pastVet-1">Past Vet Clinics and/or Doctors:</label>
+            <textarea class="form-control"
+                      placeholder="Leave a comment here"
+                      id="pastVet-1"
+                      name="pastVet-1"
+                      style="height: 100px"></textarea>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="medRecords-1">Can we request records?:</label>
+            <select class="form-select"
+                    id="medRecords-1"
+                    name="medRecords-1"
+                    aria-label="Floating label select example">
+              <option selected>Select One</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="formFile-1"
+                   class="form-label">Pet Records - Upload:</label>
+            <input class="form-control"
+                   type="file"
+                   name="formFile-1"
+                   id="formFile-1" />
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="reason-1">Reason for At-Home Care:</label>
+            <textarea class="form-control"
+                      placeholder="Leave a comment here"
+                      id="reason-1"
+                      name="reason-1"
+                      style="height: 100px"></textarea>
+          </div>
+        </div>
+        <!-- Pet 1 Additional information -->
+        <div class="mt-5"
+             id="">
+          <h2 class="border-bottom">Additional information</h2>
+          <p>Temperament:</p>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="isFriendly-1"
+                     id="isFriendly-1"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="isFriendly-1"> Friendly </label>
+            </div>
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="willBite-1"
+                     id="willBite-1"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="willBite-1"> Will bite </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="willHide-1"
+                     id="willHide-1"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="willHide-1"> Will Hide </label>
+            </div>
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="needsMuzzle-1"
+                     id="needsMuzzle-1"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="needsMuzzle-1"> Needs Muzzle </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="aggressive-1"
+                     id="aggressive-1"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="aggressive-1"> Aggressive </label>
+            </div>
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="sedation-1"
+                     id="sedation-1"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="sedation-1"> Sedation </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="extraHands-1"
+                     id="extraHands-1"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="extraHands-1"> Extra hands </label>
+            </div>
+            <div class="col"></div>
+          </div>
+          <div class="row pt-4">
+            <div class="col">
+              <label for="petPhoto-1"
+                     class="form-label">Photo - upload:</label>
+              <input class="form-control"
+                     type="file"
+                     id="petPhoto-1"
+                     name="petPhoto-1" />
+            </div>
+          </div>
+          <div class="row pt-2">
+            <div class="col">
+              <label for="share-1">Additional information: </label>
+              <textarea class="form-control"
+                        placeholder="Leave a comment here"
+                        id="share-1"
+                        name="share-1"
+                        style="height: 100px"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row p-3">
+        <p class="btn btn-primary btn-add-pet">Add Pet</p>
+      </div>
+    </div>
+    <!-- Pet 2 information form -->
+    <div class="p-2 p-md-5 step step2">
+      <div class="mt-5"
+           id="pet1-info">
+        <h2 class="border-bottom">Pet information</h2>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="pet-name-2">Pets Name:</label>
+            <input type="text"
+                   class="form-control"
+                   id="pet-name-2"
+                   name="pet-name-2" />
+          </div>
+          <div class="col">
+            <label for="breed-2">Breed:</label>
+            <input type="text"
+                   class="form-control"
+                   id="breed-2"
+                   name="breed-2" />
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="species-2">Species:</label>
+            <select class="form-select"
+                    id="species-2"
+                    aria-label="Floating label select example"
+                    name="species-2">
+              <option selected>Select One</option>
+              <option value="Cat">Cat</option>
+              <option value="Dog">Dog</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="gender-2">Gender:</label>
+            <select class="form-select"
+                    id="gender-2"
+                    name="gender-2"
+                    aria-label="Floating label select example">
+              <option selected>Select One</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="spay-2">Neutered/Spayed:</label>
+            <select class="form-select"
+                    id="spay-2"
+                    name="spay-2"
+                    aria-label="Floating label select example">
+              <option selected>Select One</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="weight-2"
+                   class="form-label">Weight:</label>
+            <input type="number"
+                   class="form-control"
+                   id="weight-2"
+                   name="weight-2" />
+          </div>
+          <div class="col">
+            <label for="age-2"
+                   class="form-label">Age:</label>
+            <input type="number"
+                   class="form-control"
+                   id="age-2"
+                   name="age-2"
+                   placeholder="Age" />
+          </div>
+          <div class="col">
+            <label for="birthday-2"
+                   class="form-label">Birthday:</label>
+            <input class="form-control"
+                   type="date"
+                   id="birthday-2"
+                   name="birthday-2" />
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="pastVet-2">Past Vet Clinics and/or Doctors:</label>
+            <textarea class="form-control"
+                      placeholder="Leave a comment here"
+                      id="pastVet-2"
+                      name="pastVet-2"
+                      style="height: 100px"></textarea>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="medRecords-2">Can we request records?:</label>
+            <select class="form-select"
+                    id="medRecords-2"
+                    name="medRecords-2"
+                    aria-label="Floating label select example">
+              <option selected>Select One</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="formFile-2"
+                   class="form-label">Pet Records - Upload:</label>
+            <input class="form-control"
+                   type="file"
+                   name="formFile-2"
+                   id="formFile-2" />
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="reason-2">Reason for At-Home Care:</label>
+            <textarea class="form-control"
+                      placeholder="Leave a comment here"
+                      id="reason-2"
+                      name="reason-2"
+                      style="height: 100px"></textarea>
+          </div>
+        </div>
+        <div class="mt-5"
+             id="">
+          <h2 class="border-bottom">Additional information</h2>
+          <p>Temperament:</p>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="isFriendly-2"
+                     id="isFriendly-2"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="isFriendly-2"> Friendly </label>
+            </div>
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="willBite-2"
+                     id="willBite-2"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="willBite-2"> Will bite </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="willHide-2"
+                     id="willHide-2"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="willHide-2"> Will Hide </label>
+            </div>
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="needsMuzzle-2"
+                     id="needsMuzzle-2"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="needsMuzzle-2"> Needs Muzzle </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="aggressive-2"
+                     id="aggressive-2"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="aggressive-2"> Aggressive </label>
+            </div>
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="sedation-2"
+                     id="sedation-2"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="sedation-2"> Sedation </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="extraHands-2"
+                     id="extraHands-2"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="extraHands-2"> Extra hands </label>
+            </div>
+            <div class="col"></div>
+          </div>
+          <div class="row pt-4">
+            <div class="col">
+              <label for="petPhoto-2"
+                     class="form-label">Photo - upload:</label>
+              <input class="form-control"
+                     type="file"
+                     id="petPhoto-2"
+                     name="petPhoto-2" />
+            </div>
+          </div>
+          <div class="row pt-2">
+            <div class="col">
+              <label for="share-2">Additional information:</label>
+              <textarea class="form-control"
+                        placeholder="Leave a comment here"
+                        id="share-2"
+                        name="share-2"
+                        style="height: 100px"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row p-3">
+        <p class="btn btn-secondary btn-prev-pet">Previous</p>
+        <p class="btn btn-primary btn-add-pet">Add Pet</p>
+      </div>
+    </div>
+    <!-- Pet 3 information form -->
+    <div class="p-2 p-md-5 step step3">
+      <div class="mt-5"
+           id="pet1-info">
+        <h2 class="border-bottom">Pet information</h2>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="pet-name-3">Pets Name:</label>
+            <input type="text"
+                   class="form-control"
+                   id="pet-name-3"
+                   name="pet-name-3" />
+          </div>
+          <div class="col">
+            <label for="breed-3">Breed:</label>
+            <input type="text"
+                   class="form-control"
+                   id="breed-3"
+                   name="breed-3" />
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="species-3">Species:</label>
+            <select class="form-select"
+                    id="species-3"
+                    aria-label="Floating label select example"
+                    name="species-3">
+              <option selected>Select One</option>
+              <option value="Cat">Cat</option>
+              <option value="Dog">Dog</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="gender-3">Gender:</label>
+            <select class="form-select"
+                    id="gender-3"
+                    name="gender-3"
+                    aria-label="Floating label select example">
+              <option selected>Select One</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="spay-3">Neutered/Spayed:</label>
+            <select class="form-select"
+                    id="spay-3"
+                    name="spay-3"
+                    aria-label="Floating label select example">
+              <option selected>Select One</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="weight-3"
+                   class="form-label">Weight:</label>
+            <input type="number"
+                   class="form-control"
+                   id="weight-3"
+                   name="weight-3" />
+          </div>
+          <div class="col">
+            <label for="age-3"
+                   class="form-label">Age:</label>
+            <input type="number"
+                   class="form-control"
+                   id="age-3"
+                   name="age-3"
+                   placeholder="Age" />
+          </div>
+          <div class="col">
+            <label for="birthday-3"
+                   class="form-label">Birthday:</label>
+            <input class="form-control"
+                   type="date"
+                   id="birthday-3"
+                   name="birthday-3" />
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="col">
+            <label for="pastVet-3">Past Vet Clinics and/or Doctors:</label>
+            <textarea class="form-control"
+                      placeholder="Leave a comment here"
+                      id="pastVet-3"
+                      name="pastVet-3"
+                      style="height: 100px"></textarea>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="medRecords-3">Can we request records?:</label>
+            <select class="form-select"
+                    id="medRecords-3"
+                    name="medRecords-3"
+                    aria-label="Floating label select example">
+              <option selected>Select One</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="formFile-3"
+                   class="form-label">Pet Records - Upload:</label>
+            <input class="form-control"
+                   type="file"
+                   name="formFile-3"
+                   id="formFile-3" />
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="reason-3">Reason for At-Home Care:</label>
+            <textarea class="form-control"
+                      placeholder="Leave a comment here"
+                      id="reason-3"
+                      name="reason-3"
+                      style="height: 100px"></textarea>
+          </div>
+        </div>
+        <!-- Pet 1 Additional information -->
+        <div class="mt-5"
+             id="">
+          <h2 class="border-bottom">Additional information</h2>
+          <p>Temperament:</p>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="isFriendly-3"
+                     id="isFriendly-3"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="isFriendly-3"> Friendly </label>
+            </div>
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="willBite-3"
+                     id="willBite-3"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="willBite-3"> Will bite </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="willHide-3"
+                     id="willHide-3"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="willHide-3"> Will Hide </label>
+            </div>
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="needsMuzzle-3"
+                     id="needsMuzzle-3"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="needsMuzzle-3"> Needs Muzzle </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="aggressive-3"
+                     id="aggressive-3"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="aggressive-3"> Aggressive </label>
+            </div>
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="sedation-3"
+                     id="sedation-3"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="sedation-3"> Sedation </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="extraHands-3"
+                     id="extraHands-3"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="extraHands-3"> Extra hands </label>
+            </div>
+            <div class="col"></div>
+          </div>
+          <div class="row pt-4">
+            <div class="col">
+              <label for="petPhoto-3"
+                     class="form-label">Photo - upload:</label>
+              <input class="form-control"
+                     type="file"
+                     id="petPhoto-3"
+                     name="petPhoto-3" />
+            </div>
+          </div>
+          <div class="row pt-2">
+            <div class="col">
+              <label for="share-2">Additional information: </label>
+              <textarea class="form-control"
+                        placeholder="Leave a commen-3t here"
+                        id="share-3"
+                        name="share-3"
+                        style="height: 100px"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row p-3">
+        <p class="btn btn-secondary btn-prev-pet">Previous</p>
+        <p class="btn btn-primary btn-add-pet">Add Pet</p>
+      </div>
+    </div>
+    <!-- Pet 4 information form -->
+    <div class="p-2 p-md-5 step step4">
+      <div class="mt-5"
+           id="pet1-info">
+        <h2 class="border-bottom">Pet information</h2>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="pet-name-4">Pets Name:</label>
+            <input type="text"
+                   class="form-control"
+                   id="pet-name-4"
+                   name="pet-name-4" />
+          </div>
+          <div class="col">
+            <label for="breed-4">Breed:</label>
+            <input type="text"
+                   class="form-control"
+                   id="breed-4"
+                   name="breed-4" />
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="species-4">Species:</label>
+            <select class="form-select"
+                    id="species-4"
+                    aria-label="Floating label select example"
+                    name="species-4">
+              <option selected>Select One</option>
+              <option value="Cat">Cat</option>
+              <option value="Dog">Dog</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="gender-4">Gender:</label>
+            <select class="form-select"
+                    id="gender-4"
+                    name="gender-4"
+                    aria-label="Floating label select example">
+              <option selected>Select One</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="spay-4">Neutered/Spayed:</label>
+            <select class="form-select"
+                    id="spay-4"
+                    name="spay-4"
+                    aria-label="Floating label select example">
+              <option selected>Select One</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="weight-4"
+                   class="form-label">Weight:</label>
+            <input type="number"
+                   class="form-control"
+                   id="weight-4"
+                   name="weight-4" />
+          </div>
+          <div class="col">
+            <label for="age-4"
+                   class="form-label">Age:</label>
+            <input type="number"
+                   class="form-control"
+                   id="age-4"
+                   name="age-4"
+                   placeholder="Age" />
+          </div>
+          <div class="col">
+            <label for="birthday-4"
+                   class="form-label">Birthday:</label>
+            <input class="form-control"
+                   type="date"
+                   id="birthday-4"
+                   name="birthday-4" />
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="pastVet-4">Past Vet Clinics and/or Doctors:</label>
+            <textarea class="form-control"
+                      placeholder="Leave a comment here"
+                      id="pastVet-4"
+                      name="pastVet-4"
+                      style="height: 100px"></textarea>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="medRecords-4">Can we request records?:</label>
+            <select class="form-select"
+                    id="medRecords-4"
+                    name="medRecords-4"
+                    aria-label="Floating label select example">
+              <option selected>Select One</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="formFile-4"
+                   class="form-label">Pet Records - Upload:</label>
+            <input class="form-control"
+                   type="file"
+                   name="formFile-4"
+                   id="formFile-4" />
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col">
+            <label for="reason-2">Reason for At-Home Care:</label>
+            <textarea class="form-control"
+                      placeholder="Leave a comment here"
+                      id="reason-2"
+                      name="reason-2"
+                      style="height: 100px"></textarea>
+          </div>
+        </div>
+        <!-- Pet 1 Additional information -->
+        <div class="mt-5"
+             id="">
+          <h2 class="border-bottom">Additional information</h2>
+          <p>Temperament:</p>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="isFriendly-4"
+                     id="isFriendly-4"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="isFriendly-4"> Friendly </label>
+            </div>
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="willBite-4"
+                     id="willBite-4"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="willBite-4"> Will bite </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="willHide-4"
+                     id="willHide-4"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="willHide-4"> Will Hide </label>
+            </div>
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="needsMuzzle-4"
+                     id="needsMuzzle-4"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="needsMuzzle-4"> Needs Muzzle </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="aggressive-4"
+                     id="aggressive-4"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="aggressive-4"> Aggressive </label>
+            </div>
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="sedation-4"
+                     id="sedation-4"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="sedation-4"> Sedation </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input class="form-check-input"
+                     type="checkbox"
+                     name="extraHands-4"
+                     id="extraHands-4"
+                     value="Checked" />
+              <label class="form-check-label"
+                     for="extraHands-4"> Extra hands </label>
+            </div>
+            <div class="col"></div>
+          </div>
+          <div class="row pt-4">
+            <div class="col">
+              <label for="petPhoto-4"
+                     class="form-label">Photo - upload:</label>
+              <input class="form-control"
+                     type="file"
+                     id="petPhoto-4"
+                     name="petPhoto-4" />
+            </div>
+          </div>
+          <div class="row pt-2">
+            <div class="col">
+              <label for="share-4">Additional information: </label>
+              <textarea class="form-control"
+                        placeholder="Leave a comment here"
+                        id="share-4"
+                        name="share-4"
+                        style="height: 100px"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row p-3">
+        <p class="btn btn-secondary btn-prev-pet">Previous Pet</p>
+      </div>
+    </div>
+    <div class="row p-lg-4">
+      <div class="col">
+        <div class="row">
+          <button type="submit"
+                  class="btn btn-primary"
+                  id="btn-submit"> Submit </button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <!-- FOOTER SECTION -->
+  <footer class="p-5">
+    <div class="row">
+      <div class="col-12 col-md-4 col-lg-3 col-sm-1">
+        <!-- Brand -->
+        <a href="/"><img src="./Images/logo.png"
+               alt="logo"
+               class="footer-brand img-fluid mb-2 small-logo" /></a>
+        <!-- Text -->
+        <p class="text-gray-700 mb-2">Sandy Paws Animal Hospital</p>
+        <p><a href="tel:19042780600"
+             class="phone">(904)278-0600</a></p>
+        <!-- Social -->
+        <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+          <li class="list-inline-item list-social-item me-3">
+            <a href="https://www.instagram.com/sandypawsah/?hl=en"
+               target="_blank"
+               class="text-decoration-none">
+              <i class="fa-brands fa-instagram-square"></i>
+            </a>
+          </li>
+          <li class="list-inline-item list-social-item me-3">
+            <a href="https://www.facebook.com/SandyPawsAnimalHospital/"
+               target="_blank"
+               class="text-decoration-none">
+              <i class="fa-brands fa-facebook-square"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <!-- Heading -->
+        <h6 class="fw-bold text-uppercase color-red">Contact us</h6>
+        <p> 550 Wells Rd <br /> Suite 17<br /> Orange Park, FL 32073 </p>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <!-- Heading -->
+        <h6 class="fw-bold text-uppercase color-red">About Us</h6>
+        <!-- List -->
+        <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+          <li class="mb-">
+            <a href="./#staff"
+               class="text-reset"> About us </a>
+          </li>
+          <li class="mb-">
+            <a href="./#service-cards"
+               class="text-reset"> Services </a>
+          </li>
+          <li>
+            <a href="./#staff"
+               class="text-reset"> Our Staff</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        <!-- Heading -->
+        <h6 class="fw-bold text-uppercase color-red">Other Links</h6>
+        <!-- List -->
+        <ul class="list-unstyled text-muted mb-0">
+          <li class="mb-1">
+            <a href="./#contact"
+               class="text-reset"> Contact us </a>
+          </li>
+          <li class="mb-1">
+            <a href="./#contact"
+               class="text-reset"> Frequent Asked Questions </a>
+          </li>
+          <li class="mb-1">
+            <a href="./register.html"
+               class="text-reset"> Register your pet </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        <!-- Heading -->
+        <h6 class="fw-bold text-uppercase color-red hours">Our Hours</h6>
+        <!-- List -->
+        <p>Mon: 8AM - 8PM</p>
+        <p>Tues: 8AM-6:00PM</p>
+        <p>Wed: 7:30AM - 6:00PM</p>
+        <p>Thur: 8AM-8PM</p>
+        <p>Fri: 8AM-6:00pm</p>
+        <p>Sat: closed</p>
+        <p>Sun: closed</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+
+</html>
