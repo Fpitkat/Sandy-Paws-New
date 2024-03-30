@@ -54,6 +54,22 @@ h4 {
   padding: 1rem 2rem;
 }
 
+.btn-outline-primary {
+  background-color: transparent;
+
+  border: 2px solid #982118;
+  font-weight: bold;
+  color: #982118;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+  background-color: #982118;
+  border: 2px solid #fff;
+  color: #fff;
+  transition: background-color 0.3s ease-out;
+}
+
 .btn-prev-pet {
   float: left;
   background-color: transparent;
@@ -88,7 +104,7 @@ nav {
   margin-right: 1.25rem;
 }
 
-.active {
+.active-contact {
   background-color: #982118;
   color: #151d3b;
   border-radius: 5px;
@@ -125,6 +141,10 @@ nav {
 
 .color-red {
   color: #982118;
+}
+
+.color-white {
+  color: #fff;
 }
 
 .reg-pet {
@@ -201,6 +221,14 @@ nav {
   height: 6.25rem;
   z-index: 1;
   transform: translate(-50%) rotate(4deg);
+}
+
+.promo-offer {
+  background-color: #a7c7cc;
+  color: #151d3b;
+  padding: 0.25rem;
+  text-align: center;
+  font-size: 1rem;
 }
 
 /* register pet */
