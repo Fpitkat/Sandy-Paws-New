@@ -4,10 +4,6 @@ const prevPetBtn = document.querySelectorAll('form .btn-prev-pet');
 const form = document.getElementsByClassName('form-page ');
 const dog = document.getElementsByClassName('dog');
 
-// dog.addEventListener('click', (ev) => {
-//   TweenMax.to(dog, 1, { x: 200 })
-// })
-
 addPetBtn.forEach((button) => {
   button.addEventListener('click', (e) => {
     changeStep('next');
@@ -36,3 +32,35 @@ function changeStep(btn) {
   steps[index].classList.add('activePage');
   scrollTo(0, 0);
 }
+
+document
+  .getElementById('contactLink')
+  .addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  });
+
+document
+  .getElementById('serviceCards')
+  .addEventListener('click', function (event) {
+    event.preventDefault();
+    document
+      .getElementById('service-cards')
+      .scrollIntoView({ behavior: 'smooth' });
+  });
+
+document
+  .getElementById('testimonial-card')
+  .addEventListener('click', function (event) {
+    event.preventDefault();
+    document
+      .getElementById('testimonials')
+      .scrollIntoView({ behavior: 'smooth' });
+  });
+
+document
+  .getElementById('staffLink')
+  .addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('staff').scrollIntoView({ behavior: 'smooth' });
+  });

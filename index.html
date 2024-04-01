@@ -105,10 +105,17 @@
                 >
               </li>
               <li class="nav-item pe-3">
-                <a class="nav-link" href="./#service-cards">Services</a>
+                <a class="nav-link" href="./#service-cards" id="serviceCards"
+                  >Services</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link pe-2" href="./#testimonials">Testimonials</a>
+                <a
+                  class="nav-link pe-2"
+                  href="./#testimonials"
+                  id="testimonial-card"
+                  >Testimonials</a
+                >
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -124,7 +131,19 @@
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink">
                   <li>
-                    <a class="dropdown-item" href="./#staff">Our Staff</a>
+                    <a class="dropdown-item" href="./#staff" id="staffLink"
+                      >Our Staff</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./cat-package.html"
+                      >Cat Packages</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./dog-package.html"
+                      >Dog Packages</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -239,7 +258,7 @@
         </div>
         <div class="carousel-inner hero-section">
           <!-- MAIN HERO SLIDE -->
-          <div class="carousel-item" data-bs-interval="6000">
+          <div class="carousel-item active" data-bs-interval="4000">
             <div class="">
               <img src="./Images/dog.png" alt="image of a dog" class="dog" />
               <img src="./Images/cat.png" alt="image of a cat" class="cat" />
@@ -268,7 +287,7 @@
           </div>
 
           <!-- PET PACKAGES SLIDE -->
-          <div class="carousel-item active" data-bs-interval="8000">
+          <div class="carousel-item" data-bs-interval="8000">
             <div class="hero-container">
               <img src="./Images/dog.png" alt="image of a dog" class="dog" />
               <img src="./Images/cat.png" alt="image of a cat" class="cat" />
@@ -291,18 +310,18 @@
                   budget management.
                 </p>
                 <p class="fw-bold">Choose a Pet Wellness Plan</p>
-                <a href="#">
-                  <p class="btn btn-secondary">Cat</p>
+                <a href="./cat-package.html">
+                  <p class="btn btn-secondary">Cat Wellness</p>
                 </a>
-                <a href="#">
-                  <p class="btn btn-primary">Dog</p>
+                <a href="./dog-package.html">
+                  <p class="btn btn-primary">Dog Wellness</p>
                 </a>
               </div>
             </div>
           </div>
 
           <!-- NEW CLIENT PROMO SLIDE -->
-          <div class="carousel-item" data-bs-interval="6000">
+          <div class="carousel-item" data-bs-interval="8000">
             <div class="hero-container">
               <img src="./Images/dog.png" alt="image of a dog" class="dog" />
               <img src="./Images/cat.png" alt="image of a cat" class="cat" />
@@ -327,10 +346,10 @@
                   our way of thanking you for entrusting us with your pet's
                   health.
                 </p>
-
-                <a href="#contact" class="btn btn-outline-danger btn-lg"
-                  >Save 50% Now</a
+                <a href="#contact" id="contactLink"
+                  ><p class="btn btn-outline-danger btn-lg">Save 50% Now</p></a
                 >
+
                 <p class="fs-6 text-muted pt-2">
                   (Not combinable with other promotions.)
                 </p>
@@ -477,6 +496,7 @@
           </div>
         </div>
       </section>
+
       <!-- TESTIMONIAL SECTION -->
       <section class="testimonials p-2 p-lg-5 pt-5" id="testimonials">
         <h2 class="section-heading pt-md-5">
