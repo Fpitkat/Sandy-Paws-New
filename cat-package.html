@@ -75,265 +75,555 @@
     <!-- favicons -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
-  <body>
+  <body class="container">
     <!-- navigation section -->
-      <nav class="navbar navbar-expand-lg navbar-light sticky-top p-2 mt-0">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/"
-            ><img src="./Images/logo.png" class="logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link font-weight-bold pe-3"
-                  aria-current="page"
-                  href="/"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item pe-3">
-                <a class="nav-link" href="./#service-cards">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link pe-2" href="./#testimonials">Testimonials</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle pe-4"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  About us
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink">
-                  <li>
-                    <a class="dropdown-item" href="./#staff">Our Staff</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle nav-link active-contact font-weight-bold text-white px-5"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Contact us
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink">
-                  <li>
-                    <a class="dropdown-item" href="./#contact">Contact</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./#contact">FAQ's</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./register.html"
-                      >Register your Pet</a
-                    >
-                  </li>
-                  <hr />
-                  <li>
-                    <a class="dropdown-item phone" href="tel:19042780600"
-                      >(904) 278-0600</a
-                    >
-                  </li>
-                  <hr />
-                  <li>
-                    <div
-                      class="d-inline-flex flex-row bd-highlight mb-3 social">
-                      <!-- Facebook -->
-                      <a
-                        style="color: #3b5998"
-                        href="https://www.facebook.com/SandyPawsAnimalHospital/"
-                        target="_blank"
-                        role="button"
-                        ><i class="fab fa-facebook-f fa-lg"></i
-                      ></a>
-                      <!-- Instagram -->
-                      <a
-                        style="color: #ac2bac"
-                        href="https://www.instagram.com/sandypawsah/?hl=en"
-                        target="_blank"
-                        role="button"
-                        ><i class="fab fa-instagram fa-lg"></i
-                      ></a>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-    <!-- service section -->
-    <section class="testimonials" id="service-cards">
-      <h2 class="section-heading pt-md-5">
-        Cat <span class="color-red">Wellness Plan</span>
-        <img class="section-bone" src="./Images/bone.png" alt="" />
-      </h2>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top p-2 mt-0">
       <div class="container">
-        <table class="table">
-          <thead class="table-dark">
-            <tr>
-              <th scope="col" class="text-center">Service</th>
-              <th scope="col" class="text-center">Explorer</th>
-              <th scope="col" class="text-center">Wanderer</th>
-              <th scope="col" class="text-center">Adventurer</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Office Visits (Up to 2/year)</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-            </tr>
-            <tr>
-              <td>Rabies Vaccinations (1 or 3 year)</td>
-              <td class="text-center">FREE</td>
-              <td class="text-center">FREE</td>
-              <td class="text-center">FREE</td>
-            </tr>
-            <tr>
-              <td>FVRCP (1 or 3 year)</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-            </tr>
-            <tr>
-              <td>Leukemia Vaccine anually up to age 8</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️ PRN</td>
-            </tr>
-            <tr>
-              <td>FeLV/FIV/HW Feline Combo Test</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-            </tr>
-            <tr>
-              <td>Intestinal Parasite Fecal exam (2X)</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-            </tr>
-            <tr>
-              <td>Deworming-Round & Hook Worms</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-            </tr>
-            <tr>
-              <td>Nutrition Evalulation</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-            </tr>
-            <tr>
-              <td>Blood Collection (Phlebotomy)</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-            </tr>
-            <tr>
-              <td>Biohazard waste fees</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-            </tr>
-            <tr>
-              <td>CBC (Complete Blood Cell Count)</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-            </tr>
-            <tr>
-              <td>Chemistry (Interal Organ Evalulation)</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-            </tr>
-            <tr>
-              <td>Electrolytes</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-              <td class="text-center">✔️</td>
-            </tr>
-
-            <!-- More rows as per the services offered -->
-          </tbody>
-          <tfoot class="fw-bold">
-            <tr>
-              <td>TOTAL</td>
-              <td class="text-center">$648.00</td>
-            </tr>
-          </tfoot>
-        </table>
-
-        <div class="row">
-          <div class="col text-center">
-            <button class="btn btn-info text-white">SAVE $99</button>
-          </div>
+        <a class="navbar-brand" href="/"
+          ><img src="./Images/logo.png" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link font-weight-bold pe-3"
+                aria-current="page"
+                href="/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="./#service-cards" id="serviceCards"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link pe-2"
+                href="./#testimonials"
+                id="testimonial-card"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle pe-4"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                About us
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="./#staff" id="staffLink"
+                    >Our Staff</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./cat-package.html"
+                    >Cat Packages</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./dog-package.html"
+                    >Dog Packages</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-link active-contact font-weight-bold text-white px-5"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Contact us
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="./#contact">Contact</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./#contact">FAQ's</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./register.html"
+                    >Register your Pet</a
+                  >
+                </li>
+                <hr />
+                <li>
+                  <a class="dropdown-item phone" href="tel:19042780600"
+                    >(904) 278-0600</a
+                  >
+                </li>
+                <hr />
+                <li>
+                  <div class="d-inline-flex flex-row bd-highlight mb-3 social">
+                    <!-- Facebook -->
+                    <a
+                      style="color: #3b5998"
+                      href="https://www.facebook.com/SandyPawsAnimalHospital/"
+                      target="_blank"
+                      role="button"
+                      ><i class="fab fa-facebook-f fa-lg"></i
+                    ></a>
+                    <!-- Instagram -->
+                    <a
+                      style="color: #ac2bac"
+                      href="https://www.instagram.com/sandypawsah/?hl=en"
+                      target="_blank"
+                      role="button"
+                      ><i class="fab fa-instagram fa-lg"></i
+                    ></a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <!-- footer section  -->
-    <footer class="p-5">
+    <main>
+      <!-- service section -->
+      <section class="testimonials pt-5 pt-md-2" id="service-cards">
+        <h2 class="section-heading pt-md-5">
+          Cat <span class="color-red">Wellness Plan</span>
+          <img class="section-bone" src="./Images/bone.png" alt="" />
+        </h2>
+        <div class="container px-2 px-md-5">
+          <div class="row">
+            <div class="col-lg-8 mt-5">
+              <div>
+                <h2>Introducing Our Cat Wellness Plans</h2>
+                <p>
+                  Give your feline friend the care they deserve with our
+                  comprehensive Cat Wellness Plans. Designed to ensure your
+                  cat's health and happiness, our plans offer a range of
+                  services tailored to meet their specific needs.
+                </p>
+                <h3>Choose the Plan That Fits Your Cat's Lifestyle</h3>
+                <ul>
+                  <li>
+                    <strong>Explorer:</strong> Perfect for indoor cats who enjoy
+                    the comforts of home
+                  </li>
+                  <li>
+                    <strong>Wanderer:</strong> Ideal for adventurous cats who
+                    love to explore the great outdoors
+                  </li>
+                  <li>
+                    <strong>Adventurer:</strong> For the most active and curious
+                    cats who crave excitement and new experiences
+                  </li>
+                </ul>
+                <p>
+                  With our plans, you could save up to $1219.15 on essential
+                  veterinary care compared to individual services. Plus, you'll
+                  have the added convenience of one simple monthly payment.
+                </p>
+                <div class="table">
+                  <table class="table table-striped">
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col" class="text-center">Service</th>
+                        <th scope="col" class="text-center">Explorer</th>
+                        <th scope="col" class="text-center">Wanderer</th>
+                        <th scope="col" class="text-center">Adventurer</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Office Visits (Up to 2/year)</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Rabies Vaccinations (1 or 3 year)</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>FVRCP (1 or 3 year)</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Leukemia Vaccine annually up to 8yr</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>FeLv/FIV/HWT Feline Combo Test</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Intestinal Parasite Fecal Exam (2x)</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Deworming-Round & Hook Worms</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Nutritional Evaluation</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Blood Collection (Phlebotomy)</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Biohazard waste fees</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>CBC (Complete Blood Cell Count)</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Chemistry (internal organ evaluation)</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Electrolytes</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Urine Sample-Collection</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-xmark"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Urinalysis (no culture)</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-xmark"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>SDMA - early kidney disease marker</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-xmark"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Thyroid Test - TT4</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-xmark"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>PT/PTT PreOp Panel w/ clotting factors</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-xmark"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-xmark"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Spay/Neuter < 1yr</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-xmark"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-xmark"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Dental Prophylaxis Cleaning</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-xmark"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-xmark"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Nail Trim up to 2 per year Good pets</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Ear Cytology up to 2 per yr</td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="text-center">
+                          <i class="fa-solid fa-check"></i>
+                        </td>
+                      </tr>
+
+                      <!-- More rows as per the services offered -->
+                    </tbody>
+                    <tfoot class="fw-bold">
+                      <tr>
+                        <td>You could be paying</td>
+                        <td class="text-center">$801.50</td>
+                        <td class="text-center">$1086.53</td>
+                        <td class="text-center">$2004.01</td>
+                      </tr>
+                      <tr>
+                        <td>Your Plan costs</td>
+                        <td class="text-center">$505.25</td>
+                        <td class="text-center">$729.86</td>
+                        <td class="text-center">$784.86</td>
+                      </tr>
+                      <tr>
+                        <td>Total Savings</td>
+                        <td class="text-center">$296.25</td>
+                        <td class="text-center">$356.67</td>
+                        <td class="text-center">$1219.15</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card mt-4">
+                <div class="card-body">
+                  <form
+                    action="https://formsubmit.co/info@sandypawsanimalhospital.com"
+                    method="post"
+                    class="form-page"
+                    name="Cat Wellness Plan">
+                    <input
+                      type="hidden"
+                      name="_subject"
+                      value="Cat Wellness Plan" />
+                    <input
+                      type="hidden"
+                      name="_next"
+                      value="https://www.sandypawsanimalhospital.com/thanks" />
+                    <p class="contact-heading pb-3">
+                      Interested in a Cat Wellness Plan?
+                    </p>
+                    <p>
+                      Don't miss out on this opportunity to give your dog the
+                      best care possible while saving money in the process.
+                      Contact us to sign up for your chosen plan and enjoy
+                      exclusive benefits today!
+                    </p>
+                    <div class="mb-3">
+                      <label class="form-label" for="name">Name</label>
+                      <input
+                        id="name"
+                        class="form-control"
+                        type="text"
+                        placeholder="Jane Doe"
+                        name="name"
+                        required />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="email">Email</label>
+                      <input
+                        id="email"
+                        class="form-control"
+                        type="email"
+                        placeholder="JaneDoe@gmail.com"
+                        name="email"
+                        required />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="message">Message</label>
+                      <textarea
+                        id="message"
+                        class="form-control"
+                        name="message"
+                        required
+                        rows="5"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <button class="btn btn-primary" type="submit">
+                        Send
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="p-3 p-md-5">
       <div class="row">
-        <div class="col-12 col-md-4 col-lg-3 col-sm-1">
-          <!-- Brand -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <a href="/"
             ><img
               src="./Images/logo.png"
               alt="logo"
               class="footer-brand img-fluid mb-2 small-logo"
           /></a>
-          <!-- Text -->
           <p class="text-gray-700 mb-2">Sandy Paws Animal Hospital</p>
           <p><a href="tel:19042780600" class="phone">(904)278-0600</a></p>
-          <!-- Social -->
-          <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
-            <li class="list-inline-item list-social-item me-3">
-              <a
-                href="https://www.instagram.com/sandypawsah/?hl=en"
-                target="_blank"
-                class="text-decoration-none">
-                <i class="fa-brands fa-instagram-square"></i>
-              </a>
-            </li>
-            <li class="list-inline-item list-social-item me-3">
-              <a
-                href="https://www.facebook.com/SandyPawsAnimalHospital/"
-                target="_blank"
-                class="text-decoration-none">
-                <i class="fa-brands fa-facebook-square"></i>
-              </a>
-            </li>
-          </ul>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <!-- Heading -->
           <h6 class="fw-bold text-uppercase color-red">Contact us</h6>
           <p>
@@ -342,24 +632,29 @@
             Orange Park, FL 32073
           </p>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <!-- Heading -->
           <h6 class="fw-bold text-uppercase color-red">About Us</h6>
           <!-- List -->
           <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
-            <li class="mb-">
+            <li class="">
               <a href="./#staff" class="text-reset"> About us </a>
             </li>
             <li class="mb-">
               <a href="./#service-cards" class="text-reset"> Services </a>
             </li>
             <li>
-              <a href="./#staff" class="text-reset"> Our Staff</a>
+              <a href="./#staff" class="text-reset">Our Staff</a>
+            </li>
+            <li>
+              <a href="./cat-package.html" class="text-reset">Cat Packages</a>
+            </li>
+            <li>
+              <a href="./dog-package.html" class="text-reset">Dog Packages</a>
             </li>
           </ul>
         </div>
-        <div class="col-12 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
-          <!-- Heading -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <h6 class="fw-bold text-uppercase color-red">Other Links</h6>
           <!-- List -->
           <ul class="list-unstyled text-muted mb-0">
@@ -378,7 +673,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-12 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <!-- Heading -->
           <h6 class="fw-bold text-uppercase color-red hours">Our Hours</h6>
           <!-- List -->
@@ -392,8 +687,5 @@
         </div>
       </div>
     </footer>
-  </body>
-</html>
-
   </body>
 </html>

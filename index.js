@@ -64,3 +64,22 @@ document
     event.preventDefault();
     document.getElementById('staff').scrollIntoView({ behavior: 'smooth' });
   });
+
+function scrollToSection(sectionId) {
+  event.preventDefault(); // Prevent the default link behavior
+  const section = document.getElementById(sectionId);
+  section.scrollIntoView({ behavior: 'smooth' });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  var links = document.querySelectorAll('.prevent-url-change');
+  links.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var href = this.getAttribute('href');
+      var parts = href.split('#');
+      var id = parts[1];
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+});

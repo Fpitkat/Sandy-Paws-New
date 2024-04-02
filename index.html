@@ -77,8 +77,8 @@
   </head>
 
   <body class="container">
-    <main class="">
-      <!-- navigation section -->
+    <main>
+      <!-- NAVIGATION SECTION-->
       <nav class="navbar navbar-expand-lg navbar-light sticky-top p-2 mt-0">
         <div class="container-fluid">
           <a class="navbar-brand" href="/"
@@ -161,10 +161,18 @@
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink">
                   <li>
-                    <a class="dropdown-item" href="./#contact">Contact</a>
+                    <a
+                      class="dropdown-item"
+                      onclick="scrollToSection('contact')"
+                      >Contact</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./#contact">FAQ's</a>
+                    <a
+                      class="dropdown-item"
+                      onclick="scrollToSection('contact')"
+                      >FAQ's</a
+                    >
                   </li>
                   <li>
                     <a class="dropdown-item" href="./register.html"
@@ -206,34 +214,8 @@
         </div>
       </nav>
 
-      <!-- hero sction -->
-      <!-- <section class="hero-section">
-        <div class="hero-container">
-          <img src="./Images/dog.png" alt="image of a dog" class="dog" />
-          <img src="./Images/cat.png" alt="image of a cat" class="cat" />
-          <img src="./Images/pig.png" alt="image of a pig" class="pig" />
-          <img src="./Images/bird.png" alt="image of a bird" class="bird" />
-          <img src="./Images/heart.png" alt="image of a heart" class="heart" />
-          <div class="hero-image"></div>
-          <div class="hero-text">
-            <h1 class="text-uppercase fw-bold hero-title">
-              Welcome to Sandy Paws <br />
-              <span class="color-red">Animal Hospital</span>
-            </h1>
-            <p class="my-3">
-              Sandy Paws Animal Hospital is a full-service veterinary hospital
-              that provides preventative, medical, surgical, dental, and
-              hospitalized care for your pet.
-            </p>
-            <a href="./register.html">
-              <p class="btn btn-secondary">Book Appointment</p>
-            </a>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- carousel -->
-      <div
+      <!--  CAROUSEL -->
+      <header
         id="carouselExampleDark"
         class="carousel carousel-dark slide hero-container"
         data-bs-ride="carousel">
@@ -271,7 +253,7 @@
               <div class="hero-image"></div>
               <div class="hero-text">
                 <p class="text-uppercase fw-bold hero-title fs-1">
-                  Welcome to Sandy Paws <br />
+                  Welcome to Sandy Paws
                   <span class="color-red pt-0">Animal Hospital</span>
                 </p>
                 <p class="my-3">
@@ -346,7 +328,7 @@
                   our way of thanking you for entrusting us with your pet's
                   health.
                 </p>
-                <a href="#contact" id="contactLink"
+                <a href="./register.html" id="contactLink"
                   ><p class="btn btn-outline-danger btn-lg">Save 50% Now</p></a
                 >
 
@@ -373,35 +355,38 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      </header>
 
-      <!-- PROMO OFFER -->
-      <!-- <div class="promo-offer p-md-5 p-3">
-        <p class="fs-4">
-          Become a part of the Sandy Paws Family and enjoy
-          <span class="color-red fw-bold">50% off</span> on your Initial Client
-          Examination
-        </p>
+      <!-- PROMO SECTION -->
+      <!-- <section class="alert alert-primary" role="alert">
+        <div class="promo-offer p-md-5">
+          <p class="fs-4">
+            Become a part of the Sandy Paws Family and enjoy
+            <span class="color-red fw-bold">50% off</span> on your Initial
+            Client Examination
+          </p>
 
-        <p>
-          At Sandy Paws, we believe in creating a welcoming and caring
-          environment for all our furry friends. As a new member of our family,
-          we're offering you a 50% discount on your first exam. This is our way
-          of saying thank you for trusting us with your pet's health.
-        </p>
-        <p>
-          Our team of dedicated and experienced veterinarians is ready to
-          provide your pet with the highest quality care. Don't miss out on this
-          special offer. Book your appointment today and let us help you keep
-          your pet happy and healthy.
-        </p>
-        <a href="#contact" class="btn btn-outline-primary btn-lg"
-          >Save 50% Now</a
-        >
-        <p class="fs-6 color-white p-3">
-          (This offer cannot be combined with any other offers)
-        </p>
-      </div> -->
+          <p>
+            At Sandy Paws, we believe in creating a welcoming and caring
+            environment for all our furry friends. As a new member of our
+            family, we're offering you a 50% discount on your first exam. This
+            is our way of saying thank you for trusting us with your pet's
+            health.
+          </p>
+          <p>
+            Our team of dedicated and experienced veterinarians is ready to
+            provide your pet with the highest quality care. Don't miss out on
+            this special offer. Book your appointment today and let us help you
+            keep your pet happy and healthy.
+          </p>
+          <a href="./register.html" class="btn btn-outline-primary btn-lg"
+            >Save 50% Now</a
+          >
+          <p class="fs-6 color-white p-3 text-center">
+            (This offer cannot be combined with any other offers)
+          </p>
+        </div>
+      </section> -->
 
       <!-- service section -->
       <section class="service-cards" id="service-cards">
@@ -646,7 +631,7 @@
         </div>
       </section>
 
-      <!-- CONTACT SECTION  -->
+      <!-- CONTACT / FAQ SECTION -->
       <section
         class="position-relative py-xl-5 service-section p-2 p-lg-5 pt-5"
         id="contact">
@@ -917,41 +902,21 @@
         </div>
       </section>
     </main>
-    <!-- footer section  -->
-    <footer class="p-5">
+
+    <!-- FOOTER SECTION  -->
+    <footer class="p-3 p-md-5">
       <div class="row">
-        <div class="col-12 col-md-4 col-lg-3 col-sm-1">
-          <!-- Brand -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <a href="/"
             ><img
               src="./Images/logo.png"
               alt="logo"
               class="footer-brand img-fluid mb-2 small-logo"
           /></a>
-          <!-- Text -->
           <p class="text-gray-700 mb-2">Sandy Paws Animal Hospital</p>
           <p><a href="tel:19042780600" class="phone">(904)278-0600</a></p>
-          <!-- Social -->
-          <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
-            <li class="list-inline-item list-social-item me-3">
-              <a
-                href="https://www.instagram.com/sandypawsah/?hl=en"
-                target="_blank"
-                class="text-decoration-none">
-                <i class="fa-brands fa-instagram-square"></i>
-              </a>
-            </li>
-            <li class="list-inline-item list-social-item me-3">
-              <a
-                href="https://www.facebook.com/SandyPawsAnimalHospital/"
-                target="_blank"
-                class="text-decoration-none">
-                <i class="fa-brands fa-facebook-square"></i>
-              </a>
-            </li>
-          </ul>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <!-- Heading -->
           <h6 class="fw-bold text-uppercase color-red">Contact us</h6>
           <p>
@@ -960,24 +925,29 @@
             Orange Park, FL 32073
           </p>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <!-- Heading -->
           <h6 class="fw-bold text-uppercase color-red">About Us</h6>
           <!-- List -->
           <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
-            <li class="mb-">
+            <li class="">
               <a href="./#staff" class="text-reset"> About us </a>
             </li>
             <li class="mb-">
               <a href="./#service-cards" class="text-reset"> Services </a>
             </li>
             <li>
-              <a href="./#staff" class="text-reset"> Our Staff</a>
+              <a href="./#staff" class="text-reset">Our Staff</a>
+            </li>
+            <li>
+              <a href="./cat-package.html" class="text-reset">Cat Packages</a>
+            </li>
+            <li>
+              <a href="./dog-package.html" class="text-reset">Dog Packages</a>
             </li>
           </ul>
         </div>
-        <div class="col-12 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
-          <!-- Heading -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <h6 class="fw-bold text-uppercase color-red">Other Links</h6>
           <!-- List -->
           <ul class="list-unstyled text-muted mb-0">
@@ -996,7 +966,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-12 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <!-- Heading -->
           <h6 class="fw-bold text-uppercase color-red hours">Our Hours</h6>
           <!-- List -->

@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 17px;
 }
 
 body {
@@ -18,16 +19,89 @@ a {
   text-decoration: none;
 }
 
+h4 {
+  margin-bottom: 0%;
+}
+
+/* hero sction */
+
+.hero-section {
+  background-color: #c9dadc;
+  position: relative;
+}
+
+.hero-container {
+  height: 25rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-image {
+  width: 100%;
+  height: 25rem;
+  background-color: #a7c7cc;
+  background-position: center;
+  z-index: -2;
+  -webkit-clip-path: polygon(0 85%, 100% 68%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 85%, 100% 68%, 100% 100%, 0% 100%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 45%;
+}
+
+.dog {
+  position: absolute;
+  top: 1%;
+  left: 55%;
+  height: 400px;
+  z-index: 2;
+}
+
+.cat {
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  height: 14rem;
+  z-index: 1;
+}
+
+.pig {
+  position: absolute;
+  top: 50%;
+  left: 69%;
+  height: 6.25rem;
+  z-index: 1;
+}
+
+.bird {
+  position: absolute;
+  top: 5%;
+  left: 80%;
+  height: 6.25rem;
+  z-index: 1;
+}
+
+.heart {
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  height: 6.25rem;
+  z-index: 1;
+  transform: translate(-50%) rotate(4deg);
+}
+
 .hero-title {
   padding: 0;
   margin: 0;
   line-height: 1.1;
 }
 
-h4 {
-  margin-bottom: 0%;
-}
-
+/* buttons */
 .btn-primary {
   background-color: #982118;
   border: none;
@@ -123,6 +197,8 @@ nav {
   padding-left: 2em;
 }
 
+/* sections */
+
 .section-heading {
   position: relative;
   text-align: center;
@@ -149,78 +225,6 @@ nav {
   margin: 0 auto;
 }
 
-/* hero sction */
-
-.hero-section {
-  background-color: #c9dadc;
-  position: relative;
-}
-
-.hero-container {
-  height: 25rem;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.hero-image {
-  width: 100%;
-  height: 25rem;
-  background-color: #a7c7cc;
-  background-position: center;
-  z-index: -2;
-  -webkit-clip-path: polygon(0 85%, 100% 68%, 100% 100%, 0% 100%);
-  clip-path: polygon(0 85%, 100% 68%, 100% 100%, 0% 100%);
-}
-
-.hero-text {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 45%;
-}
-
-.dog {
-  position: absolute;
-  top: 1%;
-  left: 55%;
-  height: 400px;
-  z-index: 2;
-}
-
-.cat {
-  position: absolute;
-  top: 40%;
-  left: 75%;
-  height: 14rem;
-  z-index: 1;
-}
-
-.pig {
-  position: absolute;
-  top: 50%;
-  left: 69%;
-  height: 6.25rem;
-  z-index: 1;
-}
-
-.bird {
-  position: absolute;
-  top: 5%;
-  left: 80%;
-  height: 6.25rem;
-  z-index: 1;
-}
-
-.heart {
-  position: absolute;
-  top: 64%;
-  left: 50%;
-  height: 6.25rem;
-  z-index: 1;
-  transform: translate(-50%) rotate(4deg);
-}
-
 /* register pet */
 
 .reg-text {
@@ -240,11 +244,11 @@ nav {
   text-decoration-color: #ff0000aa;
 }
 
+/* Service Cards */
+
 #services {
   gap: 5%;
 }
-
-/* Service Cards */
 
 .service-cards {
   background-image: url('./Images/paw--big.png');
@@ -331,8 +335,6 @@ footer {
   padding-right: 1em;
 }
 
-/* REGISTER PET PAGE */
-
 /* CLIENT INFO */
 
 .contact-heading {
@@ -414,87 +416,6 @@ hr {
   align-content: center;
 }
 
-@media only screen and (max-width: 1000px) {
-  .cat {
-    left: 70%;
-  }
-
-  .pig {
-    display: none;
-  }
-  .hero-text {
-    z-index: 1;
-    top: 5%;
-    left: 5%;
-    width: 45%;
-  }
-
-  .hero-text > h1 {
-    font-size: 2rem;
-  }
-
-  .logo {
-    height: 4.375rem;
-  }
-
-  #btn-submit {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 75%;
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 775px) {
-  .dog,
-  .cat,
-  .bird,
-  .heart {
-    display: none;
-  }
-  .hero-text {
-    top: 3%;
-    left: 5%;
-    width: 90%;
-    padding-top: 1rem;
-  }
-
-  .hero-text > h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero-container {
-    text-align: center;
-  }
-
-  .service-cards {
-    padding: 1rem !important;
-    background-image: none;
-  }
-
-  #btn-submit {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 85%;
-    text-align: center;
-  }
-
-  .section-bone {
-    top: -27px;
-    left: 50%;
-  }
-
-  .hero-text > h1 {
-    font-size: 2rem;
-  }
-
-  .hours {
-    padding-top: 1rem;
-  }
-}
-
 /* BLOG SECTION */
 
 .blog-header-img {
@@ -530,4 +451,103 @@ hr {
 
 .blog--section {
   background-color: #c9dadc;
+}
+
+.alert-primary {
+  background-color: #a7c7cc;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  color: #151d3b;
+}
+
+@media only screen and (max-width: 1200px) {
+  .cat {
+    left: 72%;
+  }
+
+  .dog {
+    left: 58%;
+  }
+
+  .pig {
+    display: none;
+  }
+
+  .hero-text {
+    z-index: 1;
+    top: 5%;
+    left: 5%;
+    width: 45%;
+    padding-left: 2.5rem;
+  }
+
+  .hero-text > h1 {
+    font-size: 1rem;
+  }
+
+  .logo {
+    height: 4.375rem;
+  }
+
+  #btn-submit {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 75%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .dog,
+  .cat,
+  .bird,
+  .heart {
+    display: none;
+  }
+  .hero-text {
+    top: 3%;
+    left: 5%;
+    width: 90%;
+    padding-top: 1rem;
+  }
+
+  .hero-text > h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 0.75em;
+  }
+
+  .hero-container {
+    text-align: center;
+  }
+
+  .service-cards {
+    padding: 1rem !important;
+    background-image: none;
+  }
+
+  #btn-submit {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 85%;
+    text-align: center;
+  }
+
+  .section-bone {
+    top: -27px;
+    left: 50%;
+  }
+
+  .hero-text > h1 {
+    font-size: 2rem;
+  }
+
+  .hours {
+    padding-top: 1rem;
+  }
 }
