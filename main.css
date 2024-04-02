@@ -11,7 +11,7 @@ body {
   background-color: #eee;
   color: #151d3b;
   margin: 0;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 a {
@@ -272,6 +272,14 @@ nav {
   gap: 5%;
 }
 
+.nav-link {
+  font-size: 1.25rem;
+}
+
+.nav-link:hover {
+  color: #982118;
+}
+
 /* Service Cards */
 
 .service-cards {
@@ -281,15 +289,18 @@ nav {
   background-position: center;
   z-index: 2;
 }
+.table {
+  border: 1px solid #fff;
+}
 
 .card {
   text-align: center;
   border-radius: 1.5rem;
-  border: 1px solid #f1f1f1;
-  background-color: #c9dadcd1;
+  border: 2px solid #ffffffcc;
+  background-color: #c9dadcd2;
   transition: all 0.4s;
   padding: 1rem !important;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+  box-shadow: rgba(0, 0, 0, 0.607) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
@@ -315,6 +326,16 @@ nav {
   font-size: 45px;
   margin: 1rem;
   color: #982118a0;
+}
+
+.fa-check {
+  color: green;
+  font-size: 25px;
+}
+
+.fa-xmark {
+  color: #982118;
+  font-size: 25px;
 }
 
 .service-cards {
@@ -344,6 +365,10 @@ nav {
 #contact {
   background-color: #c9dadc;
   color: #151d3b;
+}
+
+.cat-section {
+  background-color: #a7c7cc;
 }
 
 /* footer */

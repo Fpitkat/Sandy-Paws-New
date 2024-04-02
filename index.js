@@ -33,12 +33,12 @@ function changeStep(btn) {
   scrollTo(0, 0);
 }
 
-document
-  .getElementById('contactLink')
-  .addEventListener('click', function (event) {
-    event.preventDefault();
-    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-  });
+// document
+//   .getElementById('contactLink')
+//   .addEventListener('click', function (event) {
+//     event.preventDefault();
+//     document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+//   });
 
 document
   .getElementById('serviceCards')
