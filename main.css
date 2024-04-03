@@ -521,8 +521,9 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
-  .table-responsive th,
-  .table-responsive td {
+  th,
+  td,
+  tr {
     width: 100%; /* This will make the columns take up the full width of the screen on mobile devices */
     box-sizing: border-box;
     overflow-x: auto;
