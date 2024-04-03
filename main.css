@@ -515,10 +515,18 @@ hr {
   background-color: #c9dadc;
 }
 
-@media only screen and (max-width: 600px) {
-  .form-control {
-    font-size: 14px;
-    padding: 10px;
+.table-responsive th,
+.table-responsive td {
+  width: auto; /* This will make the columns as wide as their content */
+}
+
+@media screen and (max-width: 768px) {
+  .table-responsive th,
+  .table-responsive td {
+    width: 100%; /* This will make the columns take up the full width of the screen on mobile devices */
+    box-sizing: border-box;
+    overflow-x: auto;
+    white-space: wrap;
   }
 }
 
