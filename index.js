@@ -61,7 +61,7 @@ document
 document
   .getElementById('staffLink')
   .addEventListener('click', function (event) {
-    event.preventDefault();
+    // event.preventDefault();
     document.getElementById('staff').scrollIntoView({ behavior: 'smooth' });
   });
 
