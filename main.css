@@ -543,10 +543,7 @@ hr {
     padding-bottom: 2rem;
   }
   .hero-text {
-    top: 3%;
-    left: 5%;
     width: 90%;
-    padding-top: 1rem;
   }
 
   .hero-text > h1 {
@@ -596,7 +593,7 @@ hr {
     z-index: 1;
     top: 5%;
     left: 5%;
-    width: 90%;
+    /* width: 45%; */
   }
 
   .hero-text > h1 {
