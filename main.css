@@ -1,3 +1,14 @@
+:root {
+  --primary-color: #151d3b;
+  --secondary-color: #ffffffcc;
+  --border-color: #fff;
+  --bg-color: #c9dadcd2;
+  --light-grey: #eee;
+  --main-red: #982118;
+  --shadow-color: rgba(0, 0, 0, 0.07);
+  --body-bg-color: #eee;
+  --body-text-color: #151d3b;
+}
 * {
   box-sizing: border-box;
 }
