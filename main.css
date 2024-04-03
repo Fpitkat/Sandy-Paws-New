@@ -515,35 +515,10 @@ hr {
   background-color: #c9dadc;
 }
 
-@media only screen and (max-width: 1200px) {
-  .cat {
-    left: 70%;
-  }
-
-  .pig {
-    display: none;
-  }
-  .hero-text {
-    z-index: 1;
-    top: 5%;
-    left: 5%;
-    width: 45%;
-  }
-
-  .hero-text > h1 {
-    font-size: 2rem;
-  }
-
-  .logo {
-    height: 4.375rem;
-  }
-
-  #btn-submit {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 75%;
-    text-align: center;
+@media only screen and (max-width: 600px) {
+  .form-control {
+    font-size: 14px;
+    padding: 10px;
   }
 }
 
@@ -597,5 +572,37 @@ hr {
 
   .hours {
     padding-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .cat {
+    left: 70%;
+  }
+
+  .pig {
+    display: none;
+  }
+  .hero-text {
+    z-index: 1;
+    top: 5%;
+    left: 5%;
+    width: 45%;
+  }
+
+  .hero-text > h1 {
+    font-size: 2rem;
+  }
+
+  .logo {
+    height: 4.375rem;
+  }
+
+  #btn-submit {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 75%;
+    text-align: center;
   }
 }
