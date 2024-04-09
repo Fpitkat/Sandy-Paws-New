@@ -23,6 +23,7 @@ body {
   color: #151d3b;
   margin: 0;
   font-size: 17px;
+  overflow-x: hidden;
 }
 
 a {
