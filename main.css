@@ -537,6 +537,10 @@ hr {
   animation: pulse 1s infinite;
 }
 
+.click-here {
+  color: #982118;
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);
