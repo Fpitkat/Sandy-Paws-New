@@ -87,19 +87,26 @@ document.addEventListener('DOMContentLoaded', function () {
 // intersection observer
 document.addEventListener('DOMContentLoaded', function () {
   const images = document.querySelectorAll('.img-blur');
+  const stars = document.querySelectorAll('.fa-star');
 
   const options = {
     root: null, // using the viewport as the root
     rootMargin: '0px',
-    threshold: 0.25, // 10% of the element is visible
+    threshold: 0.25, // 25% of the element is visible
   };
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.remove('img-blur');
+        if (entry.target.matches('.fa-star')) {
+          entry.target.classList.add('animate');
+        }
       } else {
         entry.target.classList.add('img-blur');
+        if (entry.target.matches('.fa-star')) {
+          entry.target.classList.remove('animate');
+        }
       }
     });
   }, options);
@@ -108,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
     observer.observe(img);
   });
 
-  texts.forEach((text) => {
-    observer.observe(text);
+  stars.forEach((star) => {
+    observer.observe(star);
   });
 });
