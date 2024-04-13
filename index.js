@@ -83,3 +83,32 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// intersection observer
+document.addEventListener('DOMContentLoaded', function () {
+  const images = document.querySelectorAll('.img-blur');
+
+  const options = {
+    root: null, // using the viewport as the root
+    rootMargin: '0px',
+    threshold: 0.25, // 10% of the element is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('img-blur');
+      } else {
+        entry.target.classList.add('img-blur');
+      }
+    });
+  }, options);
+
+  images.forEach((img) => {
+    observer.observe(img);
+  });
+
+  texts.forEach((text) => {
+    observer.observe(text);
+  });
+});
