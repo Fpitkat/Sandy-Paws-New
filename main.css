@@ -1,3 +1,14 @@
+:root {
+  --primary-color: #151d3b;
+  --secondary-color: #ffffffcc;
+  --border-color: #fff;
+  --bg-color: #c9dadcd2;
+  --light-grey: #eee;
+  --main-red: #982118;
+  --shadow-color: rgba(0, 0, 0, 0.07);
+  --body-bg-color: #eee;
+  --body-text-color: #151d3b;
+}
 * {
   box-sizing: border-box;
 }
@@ -11,7 +22,8 @@ body {
   background-color: #eee;
   color: #151d3b;
   margin: 0;
-  font-size: 16px;
+  font-size: 17px;
+  overflow-x: hidden;
 }
 
 a {
@@ -82,6 +94,19 @@ h4 {
   float: right;
   background-color: #151d3b;
   color: #fff;
+}
+
+.btn-outline-danger {
+  background-color: transparent;
+  color: #982118;
+  font-weight: bold;
+  border: 2px solid #982118;
+}
+
+.btn-outline-danger:hover {
+  background-color: #982118;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 /* navigation section */
@@ -163,6 +188,11 @@ nav {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.hero-title {
+  margin: 0;
+  line-height: 1;
 }
 
 .hero-image {
@@ -254,6 +284,14 @@ nav {
   gap: 5%;
 }
 
+.nav-link {
+  font-size: 1.25rem;
+}
+
+.nav-link:hover {
+  color: #982118;
+}
+
 /* Service Cards */
 
 .service-cards {
@@ -263,15 +301,18 @@ nav {
   background-position: center;
   z-index: 2;
 }
+.table {
+  border: 1px solid #fff;
+}
 
 .card {
   text-align: center;
   border-radius: 1.5rem;
-  border: 1px solid #f1f1f1;
-  background-color: #c9dadcd1;
+  border: 2px solid #ffffffcc;
+  background-color: #c9dadcd2;
   transition: all 0.4s;
   padding: 1rem !important;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+  box-shadow: rgba(0, 0, 0, 0.802) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
@@ -299,7 +340,22 @@ nav {
   color: #982118a0;
 }
 
+.fa-check {
+  color: green;
+  font-size: 25px;
+}
+
+.fa-xmark {
+  color: #982118;
+  font-size: 25px;
+}
+
 .service-cards {
+  background-color: #a7c7cc;
+}
+
+/* Wellness Section */
+.wellness-section {
   background-color: #a7c7cc;
 }
 
@@ -326,6 +382,10 @@ nav {
 #contact {
   background-color: #c9dadc;
   color: #151d3b;
+}
+
+.cat-section {
+  background-color: #a7c7cc;
 }
 
 /* footer */
@@ -424,50 +484,99 @@ hr {
   align-content: center;
 }
 
-@media only screen and (max-width: 1000px) {
-  .cat {
-    left: 70%;
-  }
+/* BLOG SECTION */
 
-  .pig {
-    display: none;
-  }
-  .hero-text {
-    z-index: 1;
-    top: 5%;
-    left: 5%;
-    width: 45%;
-  }
+.blog-header-img {
+  max-width: 75px;
+  max-height: 75px;
+  border: none;
+}
 
-  .hero-text > h1 {
-    font-size: 2rem;
-  }
+.blog-header {
+  display: flex;
+  flex-direction: row;
 
-  .logo {
-    height: 4.375rem;
-  }
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
 
-  #btn-submit {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 75%;
-    text-align: center;
+.blog-post-title {
+  color: #982118;
+  font-weight: 900;
+}
+
+.blog-post {
+  background-color: #a7c7cc;
+  color: #151d3b;
+  padding: 10px 25px;
+  margin-bottom: 25px;
+  border-radius: 0.5rem;
+  border: 2px solid #eee;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.blog--section {
+  background-color: #c9dadc;
+}
+
+.table-responsive th,
+.table-responsive td {
+  width: auto; /* This will make the columns as wide as their content */
+}
+
+/* image-blur */
+.img-blur {
+  filter: blur(8px);
+  transition: filter 0.3s ease-out;
+}
+
+.animate {
+  display: inline-block;
+  animation: pulse 1s infinite;
+}
+
+.click-here {
+  color: #982118;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
-@media only screen and (max-width: 775px) {
+@media screen and (max-width: 768px) {
+  th,
+  td,
+  tr {
+    width: 100%; /* This will make the columns take up the full width of the screen on mobile devices */
+    box-sizing: border-box;
+    overflow-x: auto;
+    white-space: wrap;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .dog,
   .cat,
   .bird,
   .heart {
     display: none;
   }
+  .section-heading {
+    padding-top: -10.5rem;
+    padding-bottom: 2rem;
+  }
   .hero-text {
-    top: 3%;
-    left: 5%;
     width: 90%;
-    padding-top: 1rem;
   }
 
   .hero-text > h1 {
@@ -505,39 +614,34 @@ hr {
   }
 }
 
-/* BLOG SECTION */
+@media only screen and (max-width: 1200px) {
+  .cat {
+    left: 70%;
+  }
 
-.blog-header-img {
-  max-width: 75px;
-  max-height: 75px;
-  border: none;
-}
+  .pig {
+    display: none;
+  }
+  .hero-text {
+    z-index: 1;
+    top: 5%;
+    left: 5%;
+    /* width: 45%; */
+  }
 
-.blog-header {
-  display: flex;
-  flex-direction: row;
+  .hero-text > h1 {
+    font-size: 2rem;
+  }
 
-  gap: 1rem;
-  padding-bottom: 1rem;
-}
+  .logo {
+    height: 4.375rem;
+  }
 
-.blog-post-title {
-  color: #982118;
-  font-weight: 900;
-}
-
-.blog-post {
-  background-color: #a7c7cc;
-  color: #151d3b;
-  padding: 10px 25px;
-  margin-bottom: 25px;
-  border-radius: 0.5rem;
-  border: 2px solid #eee;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
-    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
-    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-}
-
-.blog--section {
-  background-color: #c9dadc;
+  #btn-submit {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 75%;
+    text-align: center;
+  }
 }
