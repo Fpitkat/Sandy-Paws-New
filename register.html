@@ -72,10 +72,11 @@
   </head>
 
   <body class="container">
+    <!-- NAVIGATION SECTION-->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top p-2 mt-0">
-      <div class="container">
-        <a class="navbar-brand" href="./index.html"
-          ><img src="./Images/logo.png" class="logo"
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img src="./Images/logo.png" class="logo" alt="logo"
         /></a>
         <button
           class="navbar-toggler"
@@ -93,7 +94,7 @@
               <a
                 class="nav-link font-weight-bold pe-3"
                 aria-current="page"
-                href="./index.html"
+                href="/"
                 >Home</a
               >
             </li>
@@ -128,14 +129,13 @@
                     >Our Staff</a
                   >
                 </li>
+
                 <li>
-                  <a class="dropdown-item" href="./cat-package.html"
-                    >Cat Packages</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./dog-package.html"
-                    >Dog Packages</a
+                  <a
+                    class="dropdown-item"
+                    href="https://admin.snoutplans.com/enroll/sandypaws"
+                    target="_blank"
+                    >Wellness Plans</a
                   >
                 </li>
               </ul>
@@ -154,10 +154,14 @@
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink">
                 <li>
-                  <a class="dropdown-item" href="./#contact">Contact</a>
+                  <a class="dropdown-item" onclick="scrollToSection('contact')"
+                    >Contact</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./#contact">FAQ's</a>
+                  <a class="dropdown-item" onclick="scrollToSection('contact')"
+                    >FAQ's</a
+                  >
                 </li>
                 <li>
                   <a class="dropdown-item" href="./register.html"
@@ -1153,10 +1157,7 @@
                 class="form-control"
                 type="date"
                 id="birthday-4"
-                <<<<<<<
-                HEAD
                 name="birthday-4" />
-              ======= name="birthday-4" /> >>>>>>> petPackages
             </div>
           </div>
           <div class="row pt-2">
@@ -1336,6 +1337,7 @@
         </div>
       </div>
     </form>
+
     <!-- FOOTER SECTION -->
     <footer class="p-3 p-md-5">
       <div class="row">
@@ -1373,10 +1375,12 @@
               <a href="./#staff" class="text-reset">Our Staff</a>
             </li>
             <li>
-              <a href="./cat-package.html" class="text-reset">Cat Packages</a>
-            </li>
-            <li>
-              <a href="./dog-package.html" class="text-reset">Dog Packages</a>
+              <a
+                class="dropdown-item"
+                href="https://admin.snoutplans.com/enroll/sandypaws"
+                target="_blank"
+                >Wellness Plans</a
+              >
             </li>
           </ul>
         </div>
