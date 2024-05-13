@@ -19,8 +19,8 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #eee;
-  color: #151d3b;
+  background-color: var(--light-grey);
+  color: var(--body-text-color);
   margin: 0;
   font-size: 17px;
   overflow-x: hidden;
@@ -35,7 +35,7 @@ h4 {
 }
 
 .btn-primary {
-  background-color: #982118;
+  background-color: var(--main-red);
   border: none;
   color: #fff;
   font-weight: bold;
@@ -47,19 +47,19 @@ h4 {
 .btn-primary:hover,
 .btn-primary:active {
   background-color: #fff;
-  color: #982118;
+  color: var(--main-red);
   transition: background-color 0.3s ease-out;
 }
 
 .btn-secondary:hover,
 .btn-secondary:active {
   background-color: #fff;
-  color: #151d3b;
+  color: var(--body-text-color);
   transition: background-color 0.3s ease-out;
 }
 
 .btn-secondary {
-  background-color: #151d3b;
+  background-color: var(--body-text-color);
   color: #fff;
   font-weight: bold;
   border: none;
@@ -69,14 +69,14 @@ h4 {
 .btn-outline-primary {
   background-color: transparent;
 
-  border: 2px solid #982118;
+  border: 2px solid var(--main-red);
   font-weight: bold;
-  color: #982118;
+  color: var(--main-red);
 }
 
 .btn-outline-primary:hover,
 .btn-outline-primary:active {
-  background-color: #982118;
+  background-color: var(--main-red);
   border: 2px solid #fff;
   color: #fff;
   transition: background-color 0.3s ease-out;
@@ -92,19 +92,19 @@ h4 {
 
 .btn-add-pet {
   float: right;
-  background-color: #151d3b;
+  background-color: var(--body-text-color);
   color: #fff;
 }
 
 .btn-outline-danger {
   background-color: transparent;
-  color: #982118;
+  color: var(--main-red);
   font-weight: bold;
-  border: 2px solid #982118;
+  border: 2px solid var(--main-red);
 }
 
 .btn-outline-danger:hover {
-  background-color: #982118;
+  background-color: var(--main-red);
   color: #fff;
   border: 2px solid #fff;
 }
@@ -130,8 +130,8 @@ nav {
 }
 
 .active-contact {
-  background-color: #982118;
-  color: #151d3b;
+  background-color: var(--main-red);
+  color: var(--body-text-color);
   border-radius: 5px;
 }
 
@@ -165,7 +165,7 @@ nav {
 }
 
 .color-red {
-  color: #982118;
+  color: var(--main-red);
 }
 
 .color-white {
@@ -289,7 +289,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: #982118;
+  color: var(--main-red);
 }
 
 /* Service Cards */
@@ -319,7 +319,7 @@ nav {
 
 .card-title {
   font-size: 1.5rem;
-  color: #151d3b;
+  color: var(--body-text-color);
   font-size: 1.5rem;
   font-weight: 800;
 }
@@ -346,7 +346,7 @@ nav {
 }
 
 .fa-xmark {
-  color: #982118;
+  color: var(--main-red);
   font-size: 25px;
 }
 
@@ -394,7 +394,7 @@ footer {
   overflow: hidden;
 }
 .fa-brands {
-  color: #982118;
+  color: var(--main-red);
   font-size: 1.75rem;
 }
 .fab {
@@ -450,7 +450,7 @@ label {
 .card-up {
   display: flex;
   justify-content: center;
-  border-bottom: 20px solid #151d3b;
+  border-bottom: 20px solid var(--body-text-color);
 
   background-color: #a7c7cc;
 }
@@ -470,7 +470,7 @@ label {
 }
 
 hr {
-  color: #982118;
+  color: var(--main-red);
 }
 
 /* Thank you page */
@@ -501,7 +501,7 @@ hr {
 }
 
 .blog-post-title {
-  color: #982118;
+  color: var(--main-red);
   font-weight: 900;
 }
 
@@ -538,7 +538,7 @@ hr {
 }
 
 .click-here {
-  color: #982118;
+  color: var(--main-red);
 }
 
 @keyframes pulse {
